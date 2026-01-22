@@ -61,7 +61,12 @@ const GameManager = {
         notify('🎉 恭喜完成第一章！已解锁第二章');
         this.updateProgress();
     },
-    
+
+    completeChapter2() {
+    notify('🎉 恭喜完成第二章！你已掌握《乡土中国》核心概念');
+    this.updateProgress();
+    }，
+
     updateProgress() {
         let progress = 0;
         if (this.chapter1Complete) progress += 50;
